@@ -1,0 +1,10 @@
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+}
+
+.bg-transparent-gray {
+  background: rgba(61, 59, 59, 0.835);
+}

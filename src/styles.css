@@ -1,0 +1,9 @@
+.back-gr {
+  background: linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(19, 4, 59, 1) 30%, rgba(88, 13, 231, 1) 100%);
+  background-image: url('src/assets/img/fondo.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}

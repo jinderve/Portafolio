@@ -1,0 +1,26 @@
+.mss1 {
+  font-size: 5rem;
+  width: 90%;
+}
+
+.mss2 {
+  font-size: 3rem;
+  width: 90%;
+}
+
+.img-c {
+  width: 25rem;
+  margin-bottom: 4.2rem;
+  margin-right: 2rem;
+
+
+}
+
+@media (min-width: 768px) {
+  .img-c {
+    width: 40rem;
+    margin-bottom: 5.7rem;
+    margin-right: 2rem;
+
+  }
+}

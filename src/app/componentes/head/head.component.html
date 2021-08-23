@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-sm bg-transparent p-0 my-2">
+    <div class="container">
+        <a routerLink='/' class="nav-link text-white text-center">
+            <i class="fas fa-home"></i> {{home}}
+        </a>
+        <div class="form-check form-switch">
+            <input (click)="cambiarId()" class="form-check-input" type="checkbox" id="switchidioma">
+            <label class="form-check-label text-white text-center" for="switchidioma">
+                <i class="fas fa-globe"></i> {{idioma}}
+            </label>
+        </div>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon text-white"
+                style="background-image: url('../../../assets/img/menu.svg');"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a routerLink='/about-me' class="nav-link text-white text-center">
+                        <i class="fas fa-user"></i> {{about}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/skills' class="nav-link text-white text-center">
+                        <i class="fas fa-code"></i> {{skills}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/projects' class="nav-link text-white text-center">
+                        <i class="fas fa-laptop-code"></i> {{projects}}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/contact-form' class="nav-link text-white text-center">
+                        <i class="far fa-envelope"></i> {{contact}}
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

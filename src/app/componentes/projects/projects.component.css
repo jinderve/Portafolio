@@ -1,0 +1,12 @@
+.img-proj {
+  width: 150px;
+  height: 150px;
+}
+
+.bg-transparent-g {
+  background: rgba(61, 59, 59, 0.50);
+}
+
+.burger {
+  background-image: url("../../../assets/img/menu.svg");
+}

@@ -1,0 +1,53 @@
+.bg-transparent-w {
+  background: rgba(255, 255, 255, 0.4);
+
+}
+
+@media (max-width: 991px) {
+  .card {
+    padding: 1rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .res h2 {
+    font-size: 28px;
+    margin-bottom: 1rem !important;
+  }
+
+  .res p {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .res {
+    display: block;
+  }
+
+  .res h2 {
+    font-size: 20px;
+    margin-bottom: 1rem !important;
+  }
+
+  .res p {
+    font-size: 18px !important;
+  }
+
+  .res a {
+    margin-top: 0 !important;
+  }
+
+  .res img {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .res2 {
+    width: 44% !important;
+  }
+
+  .card {
+    padding: 1rem !important;
+    margin-top: 2rem !important;
+  }
+}

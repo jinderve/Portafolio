@@ -1,0 +1,38 @@
+<div class="container">
+    <h1 class="text-white text-center mb-3">{{tittle}} </h1>
+    <!-- <h5 class="text-white text-center"> Por favor Complete el formulario y describe las necesidades de su
+        proyecto
+    </h5> -->
+    <div class="row justify-content-center mt-4 ">
+        <div class="col-8 p-4 rounded bg-transparent-w">
+            <form #contactform="ngForm" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+
+                <div class="form-floating mb-3">
+                    <input [formControl]="name" type="text" class="form-control" id="nombre" placeholder="Nombre"
+                        required>
+                    <label for="nombre">{{nameI}} </label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input [formControl]="email" type="email" class="form-control" id="email"
+                        placeholder="ejemplo@ejemplo.com" required>
+                    <label for="email">{{emailI}} </label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea [formControl]="message" maxlength="256" class="form-control" placeholder="Escribe aqui"
+                        id="mensajecontacto" style="height: 100px" required></textarea>
+                    <label for="mensajecontacto">{{textI}} </label>
+                </div>
+                <div class="text-end">
+                    <button [disabled]="isLoading" class="btn btn-primary" type="submit">{{submit}}
+                    </button>
+                </div>
+                <div class="mx-auto" #spinner></div>
+                <input *ngIf="submitted" [formControl]="honeypot" type="text" class="invisible">
+                <div [ngClass]="!submitted? 'invisible' : 'visible'" class="text-center">
+                    <span>{{responseMessage}}</span>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

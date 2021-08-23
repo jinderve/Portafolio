@@ -1,0 +1,56 @@
+.pcustom {
+  padding: 1rem 3rem;
+}
+
+
+
+.icon-skills {
+  width: 140px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.icon-skills img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: .5rem;
+}
+
+.label-skill {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 4rem;
+}
+
+.pcustom {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pcustom {
+    padding: 1.5rem 0.4rem;
+  }
+
+  .icon-skills {
+    width: 120px;
+    height: 140px;
+
+
+  }
+
+  .icon-skills img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+
+
+
+.icon-skills:hover {
+  transform: scale(1.3);
+}
